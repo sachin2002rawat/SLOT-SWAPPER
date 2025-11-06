@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  slot-swapper:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - JWT_SECRET=${JWT_SECRET:-your-super-secret-jwt-key-change-this-in-production}
+      - JWT_EXPIRES_IN=7d
+    volumes:
+      - ./server/slotswapper.db:/app/server/slotswapper.db
+    restart: unless-stopped
+

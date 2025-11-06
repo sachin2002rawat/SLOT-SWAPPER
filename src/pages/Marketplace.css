@@ -1,0 +1,138 @@
+.marketplace {
+  width: 100%;
+}
+
+.marketplace h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.marketplace-description {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.slot-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.slot-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.slot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.slot-header h3 {
+  margin: 0;
+  color: #333;
+  flex: 1;
+}
+
+.slot-user {
+  font-size: 12px;
+  color: #888;
+  background: #f5f5f5;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+.slot-details {
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.slot-details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.btn-request-swap {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-request-swap:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.slot-selection {
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 20px 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.slot-option {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 8px;
+}
+
+.slot-option:hover {
+  background-color: #f5f5f5;
+}
+
+.slot-option input[type="radio"] {
+  margin-right: 12px;
+}
+
+.slot-option-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.slot-option-details strong {
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.slot-option-details span {
+  color: #666;
+  font-size: 12px;
+}
+
+.no-slots-message {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
+
+.no-slots-message p {
+  margin-bottom: 20px;
+}
+

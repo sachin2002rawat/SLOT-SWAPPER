@@ -1,0 +1,182 @@
+.requests-page {
+  width: 100%;
+}
+
+.requests-page h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.requests-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 968px) {
+  .requests-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.requests-section h2 {
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 1.3rem;
+}
+
+.requests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.request-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.request-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.pending {
+  background: #ffe;
+  color: #cc3;
+}
+
+.status-badge.accepted {
+  background: #efe;
+  color: #3c3;
+}
+
+.status-badge.rejected {
+  background: #fee;
+  color: #c33;
+}
+
+.request-details {
+  margin-bottom: 15px;
+}
+
+.slot-comparison {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.slot-box {
+  flex: 1;
+  min-width: 200px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.slot-box h4 {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.slot-box p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.swap-arrow {
+  font-size: 24px;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.request-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-accept {
+  flex: 1;
+  background: #3c3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-accept:hover {
+  background: #2a2;
+}
+
+.btn-reject {
+  flex: 1;
+  background: #c33;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-reject:hover {
+  background: #a22;
+}
+
+.request-status-message {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #fff9e6;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.request-status-message p {
+  margin: 0;
+  color: #cc3;
+  font-style: italic;
+}
+
+.request-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.request-meta small {
+  color: #888;
+  font-size: 12px;
+}
+
