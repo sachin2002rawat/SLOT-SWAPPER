@@ -304,6 +304,6 @@ Content-Type: application/json
 - [ ] Add search and filter functionality for marketplace
 - [ ] Implement user profiles and preferences
 
-## License
 
-This project is open source and available under the MIT License.
+
+
